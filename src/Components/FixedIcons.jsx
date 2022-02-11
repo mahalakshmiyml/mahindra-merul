@@ -20,8 +20,8 @@ const FixedIcons = () => {
             </div>
             <div className="my-5">
               <a
-                href="https://wa.me/919739269105?text='Hi! I'm Interested In Assetz Marq Projects, Bangalore. Please Share Details.'"
-                target="_blank"
+                href="https://wa.me/919739269105?text='Hi! I'm Interested In Assetz Marq Projects, Bangalore. Please Share Details."
+                target="_blank" rel="noopener noreferrer"
                 className="bg-primary p-3 rounded-circle m-2"
               >
                 <i
@@ -52,8 +52,8 @@ const FixedIcons = () => {
             <div className="col-6 bg-primary p-3">
               <div className="text-center">
                 <a
-                  href="https://wa.me/919739269105?text='Hi! I'm Interested In Assetz Marq Projects, Bangalore. Please Share Details.'"
-                  target="_blank"
+                  href="https://wa.me/919739269105?text='Hi! I'm Interested In Assetz Marq Projects, Bangalore. Please Share Details."
+                  target="_blank" rel="noopener noreferrer"
                   className="bg-primary rounded-circle p-3"
                 >
                   <i

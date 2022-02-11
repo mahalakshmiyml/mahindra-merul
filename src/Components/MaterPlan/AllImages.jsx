@@ -13,11 +13,13 @@ const AllImages = () => {
     { id: 3, imgName: Image3, alt: "", tag: "" },
     { id: 4, imgName: Image4, alt: "", tag: "" },
     { id: 5, imgName: Image5, alt: "", tag: "" },
+    
   ];
 
   return (
     <div>
-      <Container>
+      <h2 className="text-center"> Coming Soon</h2>
+      {/* <Container>
         <SimpleReactLightbox>
           <SRLWrapper>
             <Row className="g-3 justify-content-center">
@@ -37,7 +39,7 @@ const AllImages = () => {
             </Row>
           </SRLWrapper>
         </SimpleReactLightbox>
-      </Container>
+      </Container> */}
     </div>
   );
 };

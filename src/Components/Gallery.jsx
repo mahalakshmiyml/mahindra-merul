@@ -28,6 +28,7 @@ const Gallery = () => {
         <Container>
           <h2 className="text-center text-primary">Gallery</h2>
           <div className="p-2 text-center d-flex flex-row justify-content-center">
+          <h2 className="text-center"> Coming Soon</h2>
             {/* <div className="m-1">
               <TagButton name="all" handlesettag={setTag} />
             </div> */}
@@ -41,7 +42,7 @@ const Gallery = () => {
               <TagButton name="three" handlesettag={setTag} />
             </div> */}
           </div>
-          <SimpleReactLightbox>
+          {/* <SimpleReactLightbox>
             <SRLWrapper>
               <Row className="g-3">
                 {images.map((item) => (
@@ -59,7 +60,7 @@ const Gallery = () => {
                 ))}
               </Row>
             </SRLWrapper>
-          </SimpleReactLightbox>
+          </SimpleReactLightbox> */}
         </Container>
       </div>
     </div>

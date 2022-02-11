@@ -5,7 +5,8 @@ import Image1 from "../images/location.png";
 const Location = () => {
   return (
     <div className="py-3 py-md-5 bg-light" id="location">
-      <Container>
+      <h2 className="text-center"> Coming Soon</h2>
+      {/* <Container>
         <Row>
           <h2 className="py-3 text-primary text-center">Location</h2>
           <Col md={6} className="align-self-center">
@@ -19,7 +20,7 @@ const Location = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
     </div>
   );
 };

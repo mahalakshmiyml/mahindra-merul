@@ -60,9 +60,9 @@ const ContactModal = (props) => {
         </Modal.Header>
         <Modal.Body>
 
-          <div className="text-center py-3">
+          {/* <div className="text-center py-3">
             <Image src={Logo} alt="" className="img-fluid" />
-          </div>
+          </div> */}
 
           <Formik
             initialValues={initialValues}

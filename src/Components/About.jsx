@@ -21,7 +21,7 @@ const About = () => {
         <Row>
           <Col md={4} className="align-self-center">
             <div className="">
-              <h2 className="py-2 text-primary text-uppercase">Why Marq 3.0</h2>
+              <h2 className="py-2 text-primary text-uppercase">Mahindra - Eden</h2>
               <ul>
                 <li className="lh-lg">Find a bit of green everywhere you go</li>
                 <li className="lh-lg">

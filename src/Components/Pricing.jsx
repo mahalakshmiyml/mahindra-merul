@@ -9,7 +9,8 @@ const Pricing = () => {
   const handleShow = () => setShow(true);
   return (
     <div id="pricing" className="bg-light">
-      <Container>
+      <h2 className="text-center"> Coming Soon</h2>
+      {/* <Container>
         <Row className="justify-content-center">
           <Col md={10}>
             <div className="">
@@ -122,7 +123,7 @@ const Pricing = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
 
       <ContactModal show={show} handleClose={handleClose} title="Download Pricesheet" />
     </div>

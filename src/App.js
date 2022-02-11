@@ -10,7 +10,7 @@ import Footer from './Components/Includes/Footer';
 import Location from './Components/Location';
 import Pricing from './Components/Pricing';
 import MasterPlan from './Components/MaterPlan/MasterPlan';
-import VirtualTour from './Components/VirtualTour';
+// import VirtualTour from './Components/VirtualTour';
 import Contact from './Contact';
 import FixedIcons from './Components/FixedIcons';
 
@@ -25,7 +25,7 @@ function App() {
       <Pricing />
       <Gallery />
       <Amenities />
-      <VirtualTour />
+      {/* <VirtualTour /> */}
       <SideForm />
       <Location />  
       <Contact />
