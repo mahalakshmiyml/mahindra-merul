@@ -19,7 +19,6 @@ function App() {
     <>
       <TopHeader />
       <MainSlider />
-      <About />
       <Overview />
       <MasterPlan />
       <Pricing />
@@ -27,8 +26,7 @@ function App() {
       <Amenities />
       {/* <VirtualTour /> */}
       <SideForm />
-      <Location />  
-      <Contact />
+      {/* <Location />  */}
       <Footer />
       <FixedIcons />
     </>

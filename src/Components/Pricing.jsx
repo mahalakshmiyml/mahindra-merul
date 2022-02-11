@@ -8,8 +8,9 @@ const Pricing = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div id="pricing" className="bg-light">
-      <h2 className="text-center"> Coming Soon</h2>
+    <div id="pricing" className="bg-light py-3 py-md-5">
+      <h2 className="text-center"> Pricing</h2>
+      <h3 className="text-center"> Coming Soon</h3>
       {/* <Container>
         <Row className="justify-content-center">
           <Col md={10}>
