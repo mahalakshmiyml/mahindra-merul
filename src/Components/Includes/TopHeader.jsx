@@ -18,8 +18,8 @@ const TopHeader = () => {
         </Navbar.Brand>
         <Nav.Link
           className="btn-sm btn-danger text-white d-block d-md-none"
-          href="tel:09739269105"
-        ><i className="fa fa-phone-volume"></i> 9739269105
+          href="tel:08147203771"
+        ><i className="fa fa-phone-volume"></i> 8147203771
         </Nav.Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -27,14 +27,14 @@ const TopHeader = () => {
             <Nav.Link href="#overview">Overview</Nav.Link>
             <Nav.Link href="#master-plan">Master Plan</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <Nav.Link href="#virtual-tour">Virtual Tour</Nav.Link>
+            {/* <Nav.Link href="#virtual-tour">Virtual Tour</Nav.Link> */}
             <Nav.Link href="#location">Location</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link
               className="btn-sm btn-danger text-white"
-              href="tel:09739269105"
-            ><i className="fa fa-phone-volume"></i> + 91 9739269105
+              href="tel:08147203771"
+            ><i className="fa fa-phone-volume"></i> + 91 8147203771
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

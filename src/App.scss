@@ -140,3 +140,13 @@ p {
     color: $white-color !important;
   }
 }
+
+#desktop-content {
+  .wraper {
+    z-index: 3;
+    bottom: 30%;
+    left: 0%;
+    background-color: #fff;
+    padding: 5px;
+  }
+}

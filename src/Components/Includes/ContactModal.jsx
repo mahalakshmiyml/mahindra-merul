@@ -3,7 +3,7 @@ import { Button, Modal, Row, Col, Image } from "react-bootstrap";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import Logo from "../../images/logo-1.png"
+import Logo from "../../images/logo-1.png";
 
 const ContactModal = (props) => {
   const [formStatus, setformStatus] = useState("");
@@ -28,7 +28,7 @@ const ContactModal = (props) => {
   });
 
   const onSubmit = (values) => {
-    const data = values;
+    let data = values;
 
     console.log(data);
 
@@ -42,27 +42,41 @@ const ContactModal = (props) => {
           data.phone
       )
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         setformStatus(response.data);
       })
       .catch(function (error) {
-        console.log(error);
+        // console.log(error);
         setformStatus(error.data);
       });
+
+    axios.post(
+      "https://buildeskapi.azurewebsites.net/api/Webhook", data = {
+        apikey: "902cb429-2dcc-4176-9958-a8610a354817",
+        firstname: data.name,
+        lastname: "",
+        source: "Mahindra Eden",
+        mobile: data.phone,
+        CreatedDate: "14/02/2022",
+        email: data.email,
+        Remark: "Brochure Downloaded",
+        HasVisitScheduled: "false",
+        VisitDate: "null",
+      })
+      
   };
   return (
     <div>
       <Modal show={props.show} onHide={props.handleClose} centered id="cre">
         <Modal.Header closeButton className="border-0 bg-primary">
-        <Modal.Title className="text-white text-titlecase border-0">
-             {props.title}
+          <Modal.Title className="text-white text-titlecase border-0">
+            {props.title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-
-          {/* <div className="text-center py-3">
+          <div className="text-center py-3">
             <Image src={Logo} alt="" className="img-fluid" />
-          </div> */}
+          </div>
 
           <Formik
             initialValues={initialValues}
@@ -130,7 +144,10 @@ const ContactModal = (props) => {
               <Row className="">
                 <Col md={12}>
                   <div className="">
-                    <Button className="btn btn-success text-white text-uppercase form-control" type="submit">
+                    <Button
+                      className="btn btn-success text-white text-uppercase form-control"
+                      type="submit"
+                    >
                       Submit
                     </Button>
                   </div>

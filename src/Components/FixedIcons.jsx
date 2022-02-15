@@ -8,7 +8,7 @@ const FixedIcons = () => {
           <div className="d-flex=column justify-content-end mb-2 position-fixed custom">
             <div className="my-5">
               <a
-                href="tel:097392691050"
+                href="tel:081472037710"
                 className="bg-primary p-3 rounded-circle m-2"
               >
                 <i
@@ -20,7 +20,7 @@ const FixedIcons = () => {
             </div>
             <div className="my-5">
               <a
-                href="https://wa.me/919739269105?text='Hi! I'm Interested In Assetz Marq Projects, Bangalore. Please Share Details."
+                href="https://wa.me/918147203771?text='Hi! I'm Interested In Assetz Marq Projects, Bangalore. Please Share Details."
                 target="_blank" rel="noopener noreferrer"
                 className="bg-primary p-3 rounded-circle m-2"
               >
@@ -40,7 +40,7 @@ const FixedIcons = () => {
           <div className="row">
             <div className="col-6 bg-primary p-3">
               <div className="text-center">
-                <a href="tel:09739269105" className="bg-primary rounded-circle p-3">
+                <a href="tel:08147203771" className="bg-primary rounded-circle p-3">
                   <i
                     className="fa fa-volume-control-phone text-white fs-2"
                     aria-hidden="true"
@@ -52,7 +52,7 @@ const FixedIcons = () => {
             <div className="col-6 bg-primary p-3">
               <div className="text-center">
                 <a
-                  href="https://wa.me/919739269105?text='Hi! I'm Interested In Assetz Marq Projects, Bangalore. Please Share Details."
+                  href="https://wa.me/918147203771?text='Hi! I'm Interested In Assetz Marq Projects, Bangalore. Please Share Details."
                   target="_blank" rel="noopener noreferrer"
                   className="bg-primary rounded-circle p-3"
                 >
