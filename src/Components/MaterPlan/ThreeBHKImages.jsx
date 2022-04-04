@@ -14,8 +14,7 @@ const ThreeBHKImages = () => {
 
   return (
     <div>
-      <h2 className="text-center"> Coming Soon</h2>
-      {/* <Container>
+      <Container>
         <SimpleReactLightbox>
           <SRLWrapper>
             <Row className="g-3">
@@ -35,7 +34,7 @@ const ThreeBHKImages = () => {
             </Row>
           </SRLWrapper>
         </SimpleReactLightbox>
-      </Container> */}
+      </Container>
     </div>
   );
 };

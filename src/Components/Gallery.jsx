@@ -22,27 +22,29 @@ const Gallery = () => {
     { id: 8, imgName: Image8, alt: "", tag: "" },
   ];
 
+  
+
   return (
     <div>
-      <div id="portfolio" className="pt-3 pb-3 pt-md-5 pb-md-5">
+      <div id="portfolio" className="pt-3 pb-3 pt-md-5 pb-md-5 bg-light">
         <Container>
           <h2 className="text-center text-primary">Gallery</h2>
-          <div className="p-2 text-center d-flex flex-row justify-content-center">
+          {/* <div className="p-2 text-center d-flex flex-row justify-content-center">
           <h2 className="text-center"> Coming Soon</h2>
-            {/* <div className="m-1">
+            <div className="m-1">
               <TagButton name="all" handlesettag={setTag} />
-            </div> */}
-            {/* <div className="m-1">
+            </div>
+            <div className="m-1">
               <TagButton name="Interior-design" handlesettag={setTag} />
             </div>
             <div className="m-1">
               <TagButton name="Constructions" handlesettag={setTag} />
-            </div> */}
-            {/* <div className="m-1">
+            </div>
+            <div className="m-1">
               <TagButton name="three" handlesettag={setTag} />
-            </div> */}
-          </div>
-          {/* <SimpleReactLightbox>
+            </div>
+          </div> */}
+          <SimpleReactLightbox>
             <SRLWrapper>
               <Row className="g-3">
                 {images.map((item) => (
@@ -60,7 +62,7 @@ const Gallery = () => {
                 ))}
               </Row>
             </SRLWrapper>
-          </SimpleReactLightbox> */}
+          </SimpleReactLightbox>
         </Container>
       </div>
     </div>

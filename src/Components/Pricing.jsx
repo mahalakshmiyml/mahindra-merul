@@ -9,13 +9,11 @@ const Pricing = () => {
   const handleShow = () => setShow(true);
   return (
     <div id="pricing" className="bg-light py-3 py-md-5">
-      <h2 className="text-center"> Pricing</h2>
-      <h3 className="text-center"> Coming Soon</h3>
-      {/* <Container>
+      <h2 className="text-center text-primary"> Pricing</h2>
+      <Container>
         <Row className="justify-content-center">
           <Col md={10}>
-            <div className="">
-              <h2 className="text-primary text-center py-2">Pricing</h2>
+            <div className="py-3">
               <Table
                 responsive="sm"
                 className="align-middle text-center border-transparent"
@@ -33,9 +31,10 @@ const Pricing = () => {
                 <tbody>
                   <tr>
                     <td>
-                      3 BHK 2T<br /> 
+                      1 BHK
+                      <br />
                     </td>
-                    <td>1372</td>
+                    <td>600</td>
                     <td>
                       <Button
                         variant="primary"
@@ -45,40 +44,23 @@ const Pricing = () => {
                         Download Price Sheet
                       </Button>
                     </td>
-                  </tr>                  <tr>
-                    <td>
-                      3 BHK 2T 
-                    </td>
-                    <td>1433</td>
-                    <td>
-                      <Button
-                        variant="primary"
-                        onClick={handleShow}
-                        className="my-3"
-                      >
-                        Download Price Sheet
-                      </Button>
-                    </td>
-                  </tr>                  <tr>
-                    <td>
-                      3 BHK 3T 
-                    </td>
-                    <td>1612</td>
-                    <td>
-                      <Button
-                        variant="primary"
-                        onClick={handleShow}
-                        className="my-3"
-                      >
-                       Download Price Sheet
-                      </Button>
-                    </td>
-                  </tr>
+                  </tr>{" "}
                   <tr>
+                    <td>2 BHK </td>
+                    <td>1200</td>
                     <td>
-                      3 BHK 3T
+                      <Button
+                        variant="primary"
+                        onClick={handleShow}
+                        className="my-3"
+                      >
+                        Download Price Sheet
+                      </Button>
                     </td>
-                    <td>1630</td>
+                  </tr>{" "}
+                  <tr> 
+                    <td>3 BHK</td>
+                    <td>1600 to 1800</td>
                     <td>
                       <Button
                         variant="primary"
@@ -90,25 +72,8 @@ const Pricing = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      3 BHK 3T<br /> (Large)
-                    </td>
-                    <td>1937</td>
-                    <td>
-                      <Button
-                        variant="primary"
-                        onClick={handleShow}
-                        className="my-3"
-                      >
-                        Download Price Sheet
-                      </Button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      4 BHK <br /> (3BHK + Studio)
-                    </td>
-                    <td>2309</td>
+                    <td>3BHK+ Study</td>
+                    <td>2000</td>
                     <td>
                       <Button
                         variant="primary"
@@ -124,9 +89,13 @@ const Pricing = () => {
             </div>
           </Col>
         </Row>
-      </Container> */}
+      </Container>
 
-      <ContactModal show={show} handleClose={handleClose} title="Download Pricesheet" />
+      <ContactModal
+        show={show}
+        handleClose={handleClose}
+        title="Download Pricesheet"
+      />
     </div>
   );
 };

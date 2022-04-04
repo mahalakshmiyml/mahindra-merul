@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Card } from "react-bootstrap";
+import { Col, Container, Row} from "react-bootstrap";
 
 const Overview = () => {
   return (
@@ -8,17 +8,43 @@ const Overview = () => {
         <Row>
           <Col md={12}>
             <div className="">
-              <h2 className="text-center text-primary py-3">Overview</h2>
-              <h3>Mahindra - Eden</h3>
+              <h2 className="text-center text-primary py-3">
+                About Mahindra - Eden
+              </h2>
+              <h3>CRAFTING NATURE POSITIVE HOMES</h3>
+              <p>Nature goes beyond the greens.</p>
+              <p>It is all-encompassing.</p>
               <p>
-              Mahindra Eden is a brilliant residential development project, all set to build up a prominent landmark in Kanakapura , Bangalore’s evolving landscape. Welcome a life full of exciting and unconditional lifestyle in the fusion homes developed with different thoughts.
+                It is a marvel of the collective physical world, including
+                plants, animals, the landscape, and other features and products
+                of the earth - everything that is not of human creation.
               </p>
-              <p>Welcome to the world of luxury living!</p>
-              <p>A wonderful enclave of exclusive homes. The perfect address for those who wish to beat the daily commute to work and yet be insulated from the bustle of urban life.</p>
-              <p>Mahindra Eden Apartments are complimented for a pious and perfect living that targets you to create a balance of space, comfort, and grandeur. The exquisite homes are an example of opulence and an establishment of a multitude of facilities. The large open spaces within the gated community where kids and seniors of the family a carefree and relish life to the fullest. Every member will indulge in something or the other fun activity and rejoice in prosperity.</p>
-              <p>Mahindra Eden Kanakapura where excitement reaches the next level considered by solace and soothing. Designed with great planning and the finest building where you can lose in pure harmony and peace. Dive in the swimming pool for a refreshing feel, an exotic clubhouse for relaxing senses, and the extensive lawns for the children to frolic and rejuvenate for all residents.</p>
-              <p>Enjoy the luxury of a fully equipped clubhouse with the gamut of recreational amenities including a swimming pool, gym, health club, indoor badminton court, party halls, billiards, table tennis, board games, reading room, and provision for a crèche.</p>
-              <p>Kanakapura Road is a wonderful residential hub with moderately greener regions. Mahindra Lifespaces' project is decisively placed with very much created social foundation, schools and universities, diversion and amusement choices, medical clinics and centers located in nearness.Kanakapura Road is all around associated with Bannerghatta, Silk Board and Electronic City, all key work centers in Bengaluru. </p>
+              <p>
+                Homes at Mahindra Eden come with the promise of enriching the
+                lives of its people by delivering a lifestyle in harmony with
+                the natural ecosystem.
+              </p>
+              <p>
+                Life flourishes in and around these homes and the residents
+                benefit from being one with nature. They feel calm and peaceful;
+                their health improves. The cool winds refresh and revitalise.
+              </p>
+              <p>Residents thrive and live a fulfilling, wholesome life.</p>
+              <h3>GO GREEN, INSIDE AND OUT</h3>
+              <p>
+                A place untouched by time. A place where nature thrives, despite
+                being surrounded by a concrete jungle. A place you will call
+                home.
+              </p>
+              <p>Discover Kanakapura Road, near Turahalli forest, in the city of Bengaluru.</p>
+              <p>Explore beautiful hills, rivers, waterfalls and the native wildlife while having 
+every modern comfort within your vicinity.</p>
+              <p>Kanakapura Road is a place where urban development coexists with natural 
+living.</p>
+<p>It is this balance between sustainability and luxury, nature and development, 
+the earth and us that made Kanakapura Road the ideal location to craft 
+Mahindra Eden.</p>
+
               {/* <Row>
                 <Col md={3} className="text-center">
                   <Card style={{ height: "22rem" }} className="text-center shadow py-2 my-2 border-success">

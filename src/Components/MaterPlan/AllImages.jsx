@@ -18,8 +18,7 @@ const AllImages = () => {
 
   return (
     <div>
-      <h2 className="text-center"> Coming Soon</h2>
-      {/* <Container>
+      <Container>
         <SimpleReactLightbox>
           <SRLWrapper>
             <Row className="g-3 justify-content-center">
@@ -39,7 +38,7 @@ const AllImages = () => {
             </Row>
           </SRLWrapper>
         </SimpleReactLightbox>
-      </Container> */}
+      </Container>
     </div>
   );
 };

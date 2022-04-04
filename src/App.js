@@ -13,6 +13,7 @@ import MasterPlan from './Components/MaterPlan/MasterPlan';
 // import VirtualTour from './Components/VirtualTour';
 import Contact from './Contact';
 import FixedIcons from './Components/FixedIcons';
+import ProjectHighlights from './Components/ProjectHighlights';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
       <TopHeader />
       <MainSlider />
       <Overview />
-      <MasterPlan />
+      <ProjectHighlights />      
       <Pricing />
+      <MasterPlan />
       <Gallery />
       <Amenities />
       {/* <VirtualTour /> */}

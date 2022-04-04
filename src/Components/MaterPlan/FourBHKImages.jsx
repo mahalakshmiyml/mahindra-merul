@@ -7,8 +7,7 @@ const FourBHKImages = () => {
   const FourBHKImages = [{ id: 1, imgName: Image1, alt: "", tag: "" }];
   return (
     <div>
-      <h2 className="text-center"> Coming Soon</h2>
-      {/* <Container>
+      <Container>
         <SimpleReactLightbox>
           <SRLWrapper>
             <Row className="g-3">
@@ -28,7 +27,7 @@ const FourBHKImages = () => {
             </Row>
           </SRLWrapper>
         </SimpleReactLightbox>
-      </Container> */}
+      </Container>
     </div>
   );
 };

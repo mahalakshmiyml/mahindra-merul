@@ -3,60 +3,53 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const Amenities = () => {
   return (
-    <div id="amenities" className="py-3 py-md-5 bg-light">
+    <div id="amenities" className="py-3 py-md-5">
       <Container>
         <Row className="justify-content-center">
           <h2 className="text-primary text-center py-2"> Amenities</h2>
           <Col md={5} className="pt-3 pb-3 pt-md-2 pb-md-2">
-            <h4>Health & Sports</h4>
+            <h4>Indoor Amenities</h4>
             <Row className="justify-content-center">
               <Col md={4} xs={6} className="pt-2 pb-2 pt-md-0">
                 <ul>
-                  <li>Badminton courts</li>
-                  <li>Squash court</li>
-                  <li>Indoor gymnasium</li>
-                  <li>Tennis court</li>
-                  <li>Basketball court</li>
-                  <li>Outdoor gym</li>
-                  <li>Pool tables</li>
+                  <li>Multipurpose hall</li>
+                  <li>Squash Court</li>
+                  <li>Spa</li>
+                  <li>Mini theatre</li>
+                  <li>Guest Rooms</li>
                 </ul>
               </Col>
               <Col>
                 <ul>
-                  <li>Jogging track</li>
-                  <li>Aerobics studio</li>
-                  <li>Billiards table</li>
-                  <li>Swimming pools and kids pool</li>
-                  <li>Tennis court</li>
-                  <li>Skating rink</li>
-                  <li>Volleyball court</li>
+                  <li>Indoor gym with Aerobics Zone</li>                  
+                  <li>Library & business lounge</li>
+                  <li>Indoor Games Room</li>                  
+                  <li>Provision For Convenience store</li>
+                  <li>Badminton court</li>
                 </ul>
               </Col>
             </Row>
           </Col>
           <Col md={5} className="pt-3 pb-3 pt-md-2 pb-md-2">
-            <h4>Others</h4>
+            <h4>Additional nature-inspired feature spread across the project</h4>
             <Row className="justify-content-center">
               <Col md={4} xs={6} className="pt-2 pb-2 pt-md-0">
                 <ul>
-                  <li>Crèche</li>
-                  <li>Kids’ play areas</li>
-                  <li>Linear park</li>
-                  <li>Party halls</li>
-                  <li>Party lawn</li>
-                  <li>Pet park</li>
-                  <li>Amphitheatre</li>
+                  <li>Botanical garden</li>
+                  <li>Therapeutic garden</li>                  
+                  <li>Bird Bath</li>
+                  <li>Bird feeders</li>
+                  <li>Nature Corridor</li>
                 </ul>
               </Col>
               <Col>
                 <ul>
-                  <li>Laundry</li>
-                  <li>Convenience store</li>
-                  <li>Salon</li>
-                  <li>Barbeque Area</li>
-                  <li>Cards Room</li>
-                  <li>Board Games Area</li>
-                  <li>Reading Room</li>
+                  <li>Nature-inspired murals</li>
+                  <li>Swinging cocoons</li>
+                  <li>Nature's Lap</li>
+                  <li>Natural Swings</li>
+                  <li>Herb garden</li>
+                  <li>Chaupals</li>
                 </ul>
               </Col>
             </Row>

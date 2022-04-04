@@ -13,8 +13,7 @@ const MasterPlan = () => {
       <h2 className="pt-2 pb-2 text-center text-primary">
         Master Plan & Floor Plans
       </h2>
-      <h2 className="text-center"> Coming Soon</h2>
-      {/* <Container>
+      <Container>
         <Row>
           <Col>
             <Tabs
@@ -38,7 +37,7 @@ const MasterPlan = () => {
             </Tabs>
           </Col>
         </Row>
-      </Container> */}
+      </Container>
     </div>
   );
 };
