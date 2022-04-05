@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Container, Nav, Row, Tab, Table } from "react-bootstrap";
+import { Button, Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import ContactModal from "./Includes/ContactModal";
 
 const Pricing = () => {

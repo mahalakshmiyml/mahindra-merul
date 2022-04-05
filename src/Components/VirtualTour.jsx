@@ -3,7 +3,7 @@ import { Col, Container, Ratio, Row } from "react-bootstrap";
 
 const VirtualTour = () => {
   return (
-    <div id="virtual-tour" className="py-3 py-md-5">
+    <div id="virtual-tour" className="py-3 py-md-5 bg-light">
       <Container>
           <h2 className="py-3 text-primary text-center">Virtual Tour</h2>
         <Row className="justify-content-center">

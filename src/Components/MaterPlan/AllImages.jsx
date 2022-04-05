@@ -1,10 +1,14 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import Image1 from "../../images/floor-plans/master-plan.png";
-import Image2 from "../../images/floor-plans/3BHK-3B-2T.png";
-import Image3 from "../../images/floor-plans/3BHK-3B-3T.png";
-import Image4 from "../../images/floor-plans/3BHK-3B-3T-1.png";
-import Image5 from "../../images/floor-plans/4BHK-3B-3T-Studio.png";
+import Image2 from "../../images/floor-plans/1bhk-medows.png";
+import Image3 from "../../images/floor-plans/2bhk-medows.png";
+import Image4 from "../../images/floor-plans/3bhk-aqua.png";
+import Image5 from "../../images/floor-plans/3bhk-green.png";
+import Image6 from "../../images/floor-plans/3bhk-medows.png";
+import Image7 from "../../images/floor-plans/floor-plan-wigs-a.png";
+import Image8 from "../../images/floor-plans/floor-plan-wigs-b.png";
+import Image9 from "../../images/floor-plans/location.png"
 
 const AllImages = () => {
   const images = [
@@ -12,8 +16,11 @@ const AllImages = () => {
     { id: 2, imgName: Image2, alt: "", tag: "" },
     { id: 3, imgName: Image3, alt: "", tag: "" },
     { id: 4, imgName: Image4, alt: "", tag: "" },
-    { id: 5, imgName: Image5, alt: "", tag: "" },
-    
+    { id: 5, imgName: Image5, alt: "", tag: "" },    
+    { id: 6, imgName: Image6, alt: "", tag: "" },
+    { id: 7, imgName: Image7, alt: "", tag: "" },
+    { id: 8, imgName: Image8, alt: "", tag: "" },
+    { id: 9, imgName: Image9, alt: "", tag: "" },
   ];
 
   return (
@@ -23,7 +30,7 @@ const AllImages = () => {
           <SRLWrapper>
             <Row className="g-3 justify-content-center">
               {images.map((item) => (
-                <Col md={4} key={item.id}>
+                <Col md={6} key={item.id}>
                   <div className="m-1 text-center border rounded">
                     <a href={item.imgName}>
                       <Image

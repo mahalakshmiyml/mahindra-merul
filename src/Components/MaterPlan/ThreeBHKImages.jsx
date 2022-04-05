@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
-import Image1 from "../../images/floor-plans/3BHK-3B-2T.png";
-import Image2 from "../../images/floor-plans/3BHK-3B-3T.png";
-import Image3 from "../../images/floor-plans/3BHK-3B-3T-1.png";
+import Image1 from "../../images/floor-plans/3bhk-aqua.png";
+import Image2 from "../../images/floor-plans/3bhk-green.png";
+import Image3 from "../../images/floor-plans/3bhk-medows.png";
 
 const ThreeBHKImages = () => {
   const ThreeBHKImages = [
@@ -19,7 +19,7 @@ const ThreeBHKImages = () => {
           <SRLWrapper>
             <Row className="g-3">
               {ThreeBHKImages.map((item) => (
-                <Col md={3} key={item.id}>
+                <Col md={6} key={item.id}>
                   <div className="m-1 text-center border rounded">
                     <a href={item.imgName}>
                       <Image

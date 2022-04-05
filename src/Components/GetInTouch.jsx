@@ -1,10 +1,11 @@
-import axios from "axios";
-import { ErrorMessage, Field, Form, Formik } from "formik";
-import React, { useState } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import axios from 'axios';
+import { ErrorMessage, Field, Form, Formik } from 'formik'
+import React, { useState } from 'react'
+import { Col, Container, Image, Row, Button } from 'react-bootstrap'
 import * as Yup from "yup";
 
-const Overview = () => {
+const GetInTouch = () => {
+
   const onSubmit = (values) => {
     const data = values;
 
@@ -27,8 +28,8 @@ const Overview = () => {
         console.log(error);
         setformStatus(error.data);
       });
-  };
 
+  };
   const [formStatus, setformStatus] = useState("");
 
   const initialValues = {
@@ -38,7 +39,7 @@ const Overview = () => {
   };
 
   const phoneRegExp =
-    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+  /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
   const validationSchema = Yup.object({
     name: Yup.string().required("Required"),
@@ -50,30 +51,14 @@ const Overview = () => {
       .max(10, "Phone No Minimum 10 Digits"),
   });
 
- 
   return (
-    <div id="overview" className="py-3 py-md-5 bg-light">
-      <Container>
-        <Row>
-          <Col md={8}>
-            <h2 className="text-center text-primary py-3">
-              About Mahindra - Eden
-            </h2>
-            <div className="p-3 rounded">
-              <h3>CRAFTING NATURE POSITIVE HOMES</h3>
-              <p>Nature goes beyond the greens.</p>
-              <p>Welcome to the world of luxury living!</p>
-              <p>A wonderful enclave of exclusive homes. The perfect address for those who wish to beat the daily commute to work and yet be insulated from the bustle of urban life.</p>
-              <p>Mahindra Eden Apartments are complimented for a pious and perfect living that targets you to create a balance of space, comfort, and grandeur. The exquisite homes are an example of opulence and an establishment of a multitude of facilities. The large open spaces within the gated community where kids and seniors of the family a carefree and relish life to the fullest. Every member will indulge in something or the other fun activity and rejoice in prosperity.</p>
-              <p>Mahindra Eden Kanakapura where excitement reaches the next level considered by solace and soothing. Designed with great planning and the finest building where you can lose in pure harmony and peace. Dive in the swimming pool for a refreshing feel, an exotic clubhouse for relaxing senses, and the extensive lawns for the children to frolic and rejuvenate for all residents.</p>
-              <p>Enjoy the luxury of a fully equipped clubhouse with the gamut of recreational amenities including a swimming pool, gym, health club, indoor badminton court, party halls, billiards, table tennis, board games, reading room, and provision for a crèche.</p>
-            </div>
-          </Col>
-          <Col md={4}>
-            <div className="p-3 bg-dark text-white rounded">
-              <div className="py-3">
-                <h2 className="text-center py-2">Schedule Site Visit</h2>
-              </div>
+    <div className="py-3 py-md-5" id="get-in-touch">
+        <h2 className="text-center text-white">Get in Touch</h2>
+        <Container>
+        <div className="p-3 text-white rounded">
+             <Row className="justify-content-center">
+               <Col md={6} className="align-self-center">
+                 
               <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
@@ -81,7 +66,7 @@ const Overview = () => {
               >
                 <Form>
                   <Row>
-                    <Col md={12}>
+                    <Col md={10}>
                       <div className="mb-5">
                         <Field
                           type="text"
@@ -97,7 +82,7 @@ const Overview = () => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={12}>
+                    <Col md={10}>
                       <div className="mb-5">
                         <Field
                           type="email"
@@ -113,7 +98,7 @@ const Overview = () => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={12}>
+                    <Col md={10}>
                       <div className="mb-5">
                         <Field
                           type="tel"
@@ -129,7 +114,7 @@ const Overview = () => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={12}>
+                    <Col md={10}>
                       {formStatus ? (
                         <div className="alert alert-success p-3 text-center">
                           {formStatus}
@@ -138,7 +123,7 @@ const Overview = () => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={12}>
+                    <Col md={10}>
                       <div className="mb-3">
                         <Button className="btn btn-primary w-100" type="submit">
                           Submit
@@ -148,12 +133,29 @@ const Overview = () => {
                   </Row>
                 </Form>
               </Formik>
+               </Col>
+               <Col md={6} className="align-self-center">
+                 <div className="text-center p-4">
+                   <a
+                href="tel:081472037710"
+                className="bg-primary p-3 rounded-circle m-2"
+              >
+                <i
+                  className="fa fa-volume-control-phone text-white fs-5"
+                  aria-hidden="true"
+                ></i>
+                <span className="d-block d-md-none"></span>
+                </a>     
+                 </div>
+                 
+                 <h3> WhatsApp</h3>
+               </Col>
+             </Row>
             </div>
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  );
-};
+        </Container>
 
-export default Overview;
+    </div>
+  )
+}
+
+export default GetInTouch
