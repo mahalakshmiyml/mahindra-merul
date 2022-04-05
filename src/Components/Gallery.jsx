@@ -26,7 +26,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <div id="portfolio" className="pt-3 pb-3 pt-md-5 pb-md-5 bg-light">
+      <div id="gallery" className="pt-3 pb-3 pt-md-5 pb-md-5 bg-light">
         <Container>
           <h2 className="text-center text-primary">Gallery</h2>
           {/* <div className="p-2 text-center d-flex flex-row justify-content-center">

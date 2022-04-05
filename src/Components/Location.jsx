@@ -1,10 +1,11 @@
 import React from "react";
 import { Col, Container, Image, Ratio, Row } from "react-bootstrap";
 import Image1 from "../images/floor-plans/location.png";
+import VirtualTour from "./VirtualTour";
 
 const Location = () => {
   return (
-    <div className="py-3 py-md-5" id="location">
+    <div className="py-3 py-md-5 bg-light" id="location">
       <Container>
         <Row>
           <h2 className="py-3 text-primary text-center">Location</h2>
@@ -18,6 +19,7 @@ const Location = () => {
               </Ratio>
             </div>
           </Col> */}
+                  
         </Row>
       </Container>
     </div>

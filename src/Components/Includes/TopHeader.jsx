@@ -25,8 +25,10 @@ const TopHeader = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto me-auto">
             <Nav.Link href="#overview">Overview</Nav.Link>
+            <Nav.Link href="#project-highlights">Configuration</Nav.Link>
             <Nav.Link href="#master-plan">Master Plan</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#gallery">Gallery</Nav.Link>
             {/* <Nav.Link href="#virtual-tour">Virtual Tour</Nav.Link> */}
             <Nav.Link href="#location">Location</Nav.Link>
           </Nav>
