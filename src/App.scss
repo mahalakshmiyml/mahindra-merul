@@ -118,6 +118,18 @@ p {
   }
 }
 
+#pricing {
+  .nav-link {
+    cursor: pointer;
+    margin: 10px 10px;
+    color: $primary-color !important;
+    &.active {
+      background-color: $primary-color !important;
+      color: $white-color !important;
+    }
+  }
+}
+
 
 #master-plan {
   .nav-link {
@@ -129,7 +141,7 @@ p {
   z-index: 1;
   .custom {
     z-index: 4;
-    left: 1%;
+    right: 1%;
     bottom: 0%;
   }
 }
@@ -150,9 +162,9 @@ p {
 #desktop-content {
   .wraper {
     z-index: 3;
-    bottom: 30%;
-    left: 0%;
-    background-color: #fff;
+    bottom: 20%;
+    left: 5%;
+    background-color: #060606b5;
     padding: 5px;
   }
 }

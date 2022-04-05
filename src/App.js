@@ -27,7 +27,7 @@ function App() {
       <Gallery />
       <Amenities />
       {/* <VirtualTour /> */}
-      <SideForm />
+      {/* <SideForm /> */}
       {/* <Location />  */}
       <Footer />
       <FixedIcons />

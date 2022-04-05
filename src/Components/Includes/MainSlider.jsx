@@ -32,7 +32,7 @@ const MainSlider = () => {
     <>
       <Carousel>
         {SlidingImages.map((image) => (
-          <Carousel.Item interval={1000} key={image.id}>
+          <Carousel.Item interval={3000} key={image.id}>
             <img
               className="d-block w-100"
               src={image.ImageUrl}
@@ -101,44 +101,27 @@ const MainSlider = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <div className="wraper position-absolute">
-                <h2 className="text-center text-white bg-danger p-2 text-uppercase">
-                  <Button
-                    onClick={handleShow}
-                    className="my-2 bg-transparent border-0 fs-2 fw-bold text-uppercase"
-                  >
-                    Booking Open
-                  </Button>
-                </h2>
-                <h1 className="text-center text-danger text-uppercase">
+              <div className="wraper position-absolute p-3">
+                <Button
+                  onClick={handleShow}
+                  className="bg-dark border-0 fs-2 text-danger fw-bold text-uppercase w-100"
+                >
+                  Booking Open
+                </Button>
+                <h1 className="text-center text-white mb-0 py-2 text-uppercase">
                   Mahindra Eden
                 </h1>
-                <h3 className="text-danger">
-                  {/* Pre-Launching Purva Sparkling Springs Phase-2 */}
-                </h3>
-                <div className="pb-2 text-center">
-                  Kanakapura Road, Bangalore.
-                </div>
-                <div className="bg-dark p-3 text-white">
-                  <ul className="list-unstyled text-center">
-                    <li>
-                      <strong>Property Type:</strong> Residential Apartments
-                    </li>
-                    <li>
-                      <strong>Unit Type </strong> 2, 3 & 4 BHK
-                    </li>
-                    <li>
-                      <strong>Project Status: </strong> Under Construction
-                    </li>
-                    {/* <li>
-                      Luxury 3 & 4 BHK Villas. Starts with{" "}
-                      <strong>₹ 3 Crore*</strong> Onwards
-                    </li> */}
+                <div className="text-white py-2">
+                  <ul className="">
+                    <li className="py-1">Kanakapura Road, Bangalore.</li>
+                    <li className="py-1">Residential Apartments</li>
+                    <li className="py-1">2, 3 & 4 BHK</li>
+                    <li className="py-1">Under Construction</li>
                   </ul>
                   <div className="text-center">
                     <Button
                       onClick={handleShow}
-                      className="my-2 bg-danger border-0 text-uppercase"
+                      className="my-2 bg-danger border-0 w-100 py-3 text-uppercase"
                     >
                       Download Brochure
                     </Button>

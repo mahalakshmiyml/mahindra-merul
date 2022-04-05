@@ -1,16 +1,43 @@
-import React from "react";
-import { Col, Container, Row} from "react-bootstrap";
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import React, { useState } from "react";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import * as Yup from "yup";
 
 const Overview = () => {
+
+  const [formStatus, setformStatus] = useState("");
+
+  const initialValues = {
+    name: "",
+    email: "",
+    phone: "",
+  };
+
+  const phoneRegExp =
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+
+  const validationSchema = Yup.object({
+    name: Yup.string().required("Required"),
+    email: Yup.string().required("required").email("Invalid email format"),
+    phone: Yup.string()
+      .required("required")
+      .matches(phoneRegExp, "Phone No is not valid")
+      .min(10, "Phone No Minimum 10 Digits")
+      .max(10, "Phone No Minimum 10 Digits"),
+  });
+
+  const onSubmit = () => {
+
+  }
   return (
     <div id="overview" className="py-3 py-md-5 bg-light">
       <Container>
         <Row>
-          <Col md={12}>
-            <div className="">
-              <h2 className="text-center text-primary py-3">
-                About Mahindra - Eden
-              </h2>
+          <Col md={8}>
+            <h2 className="text-center text-primary py-3">
+              About Mahindra - Eden
+            </h2>
+            <div className="p-3 rounded">
               <h3>CRAFTING NATURE POSITIVE HOMES</h3>
               <p>Nature goes beyond the greens.</p>
               <p>It is all-encompassing.</p>
@@ -30,85 +57,87 @@ const Overview = () => {
                 their health improves. The cool winds refresh and revitalise.
               </p>
               <p>Residents thrive and live a fulfilling, wholesome life.</p>
-              <h3>GO GREEN, INSIDE AND OUT</h3>
-              <p>
-                A place untouched by time. A place where nature thrives, despite
-                being surrounded by a concrete jungle. A place you will call
-                home.
-              </p>
-              <p>Discover Kanakapura Road, near Turahalli forest, in the city of Bengaluru.</p>
-              <p>Explore beautiful hills, rivers, waterfalls and the native wildlife while having 
-every modern comfort within your vicinity.</p>
-              <p>Kanakapura Road is a place where urban development coexists with natural 
-living.</p>
-<p>It is this balance between sustainability and luxury, nature and development, 
-the earth and us that made Kanakapura Road the ideal location to craft 
-Mahindra Eden.</p>
-
-              {/* <Row>
-                <Col md={3} className="text-center">
-                  <Card style={{ height: "22rem" }} className="text-center shadow py-2 my-2 border-success">
-                    <Card.Body>
-                      <Card.Title>Our Green Spaces</Card.Title>
-                      <Card.Text className="text-center">
-                        Walk out of the park and into more greenery. Marq offers
-                        a boulevard, a diagonal, a plaza, and a clubhouse, all
-                        landscaped with lush greenery so you never miss a moment
-                        of serenity.
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col md={3}>
-                  <Card style={{ height: "22rem" }} className="text-center shadow py-2 my-2 border-primary">
-                    <Card.Body>
-                      <Card.Title>
-                        Big Ambitious need more Room to grow
-                      </Card.Title>
-                      <Card.Text className="text-center">
-                        We built an entire school in our township- Just a short
-                        walk away from your home stands your township's very own
-                        school. The school is especially designed to equip each
-                        student with modern classrooms and sports facilities for
-                        holistic development.{" "}
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col md={3}>
-                  <Card style={{ height: "22rem" }} className="text-center shadow py-2 my-2 border-warning">
-                    <Card.Body>
-                      <Card.Title>Floor Plans</Card.Title>
-                      <Card.Text className="text-center">
-                        Just when you thought the park was our biggest space.
-                        Enter any tower and you’ll find two cores on each floor.
-                        Every core boasts three lifts for convenient access. The
-                        apartments are designed for maximum utility of space and
-                        are Vaastu compliant.{" "}
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col md={3}>
-                  <Card style={{ height: "22rem" }} className="text-center shadow py-2 my-2 border-danger">
-                    <Card.Body>
-                      <Card.Title>Find us at the heart of it all</Card.Title>
-                      <Card.Text className="text-center">
-                        Everything is close by when your home is as big as the
-                        world around you. Marq stands tall in Whitefield – one
-                        of the fastest developing areas in Bangalore.Whitefield
-                        is home to the biggest tech parks, Bangalore’s best
-                        hospitals, entertainment districts, schools and more,
-                        and Marq plays neighbour to it all.{" "}
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row> */}
-              {/* <h2 className="py-3 text-center text-success">
-                Find Marq just over 3 kms from the proposed Metro Station and
-                6.5 kms from ITPL.
-              </h2> */}
+            </div>
+          </Col>
+          <Col md={4}>
+            <div className="p-3 bg-dark text-white rounded">
+              <div className="py-3">
+                <h2 className="text-center py-2">Schedule Site Visit</h2>
+              </div>
+              <Formik
+                initialValues={initialValues}
+                validationSchema={validationSchema}
+                onSubmit={onSubmit}
+              >
+                <Form>
+                  <Row>
+                    <Col md={12}>
+                      <div className="mb-5">
+                        <Field
+                          type="text"
+                          className="form-control py-2"
+                          id="name"
+                          name="name"
+                          placeholder="Name"
+                        />
+                        <small className="text-danger">
+                          <ErrorMessage name="name" />
+                        </small>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={12}>
+                      <div className="mb-5">
+                        <Field
+                          type="email"
+                          className="form-control py-2"
+                          id="email"
+                          name="email"
+                          placeholder="Email"
+                        />
+                        <small className="text-danger">
+                          <ErrorMessage name="email" />
+                        </small>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={12}>
+                      <div className="mb-5">
+                        <Field
+                          type="tel"
+                          className="form-control py-2"
+                          id="phone"
+                          name="phone"
+                          placeholder="Phone No."
+                        />
+                        <small className="text-danger">
+                          <ErrorMessage name="phone" />
+                        </small>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={12}>
+                      {formStatus ? (
+                        <div className="alert alert-success p-3 text-center">
+                          {formStatus}
+                        </div>
+                      ) : null}
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={12}>
+                      <div className="mb-3">
+                        <Button className="btn btn-primary w-100" type="submit">
+                          Submit
+                        </Button>
+                      </div>
+                    </Col>
+                  </Row>
+                </Form>
+              </Formik>
             </div>
           </Col>
         </Row>

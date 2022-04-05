@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Container, Row, Table } from "react-bootstrap";
+import { Button, Col, Container, Nav, Row, Tab, Table } from "react-bootstrap";
 import ContactModal from "./Includes/ContactModal";
 
 const Pricing = () => {
@@ -12,8 +12,182 @@ const Pricing = () => {
       <h2 className="text-center text-primary"> Pricing</h2>
       <Container>
         <Row className="justify-content-center">
-          <Col md={10}>
-            <div className="py-3">
+          <Col md={12}>
+            <div className="">
+              <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                <Row>
+                  <Col sm={12}>
+                    <Nav
+                      variant="pills"
+                      className="flex-row justify-content-center py-3"
+                    >
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">1BHK</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">2BHK</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">3BHK</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="fourth">3BHK + Study</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                  </Col>
+                  <Col sm={12}>
+                    <Tab.Content className="py-5">
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Type</p>
+                              <h2 className="py-1">1 BHK</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Built-Up Area</p>
+                              <h2 className="py-1">600Sqft</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Price</p>
+                              <h2 className="py-1">45L Onwords*</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-none">
+                              <p className="text-center fs-4">Cost Sheet</p>
+                              <h2 className="py-1">
+                                <Button
+                                  variant="primary"
+                                  onClick={handleShow}
+                                  className=""
+                                >
+                                  Download Price Sheet
+                                </Button>
+                              </h2>
+                            </div>
+                          </Col>
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                      <Row>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Type</p>
+                              <h2 className="py-1">2 BHK</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Built-Up Area</p>
+                              <h2 className="py-1">1200Sqft</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Price</p>
+                              <h2 className="py-1">90L Onwords*</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-none">
+                              <p className="text-center fs-4">Cost Sheet</p>
+                              <h2 className="py-1">
+                                <Button
+                                  variant="primary"
+                                  onClick={handleShow}
+                                  className=""
+                                >
+                                  Download Price Sheet
+                                </Button>
+                              </h2>
+                            </div>
+                          </Col>
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                      <Row>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Type</p>
+                              <h2 className="py-1">3 BHK</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Built-Up Area</p>
+                              <h2 className="py-1">1600 - 1800 Sqft</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Price</p>
+                              <h2 className="py-1">1.3Cr Onwords*</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-none">
+                              <p className="text-center fs-4">Cost Sheet</p>
+                              <h2 className="py-1">
+                                <Button
+                                  variant="primary"
+                                  onClick={handleShow}
+                                  className=""
+                                >
+                                  Download Price Sheet
+                                </Button>
+                              </h2>
+                            </div>
+                          </Col>
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="fourth">
+                      <Row>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Type</p>
+                              <h2 className="py-1">3 BHK + Study</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Built-Up Area</p>
+                              <h2 className="py-1">2000 Sqft</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-end">
+                              <p className="text-center fs-4">Price</p>
+                              <h2 className="py-1">1.65Cr Onwords*</h2>
+                            </div>
+                          </Col>
+                          <Col md={3}>
+                            <div className="px-3 text-center border-none">
+                              <p className="text-center fs-4">Cost Sheet</p>
+                              <h2 className="py-31">
+                                <Button
+                                  variant="primary"
+                                  onClick={handleShow}
+                                  className=""
+                                >
+                                  Download Price Sheet
+                                </Button>
+                              </h2>
+                            </div>
+                          </Col>
+                        </Row>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Col>
+                </Row>
+              </Tab.Container>
+            </div>
+
+            {/* <div className="py-3">
               <Table
                 responsive="sm"
                 className="align-middle text-center border-transparent"
@@ -86,7 +260,7 @@ const Pricing = () => {
                   </tr>
                 </tbody>
               </Table>
-            </div>
+            </div> */}
           </Col>
         </Row>
       </Container>
