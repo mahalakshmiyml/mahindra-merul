@@ -147,7 +147,7 @@ const Overview = () => {
                   </Row>
                   <Row>
                     <Col md={12}>
-                    <p>* By Clicking submit, I agree to the <a href="/terms-and-condition">Terms & conditions </a> and <a href="/privacy-policy">Privacy Policy</a> and I am giving my consent to receive updates through sms/email.</p>
+                    <p>By Clicking submit, I agree to the <a href="/terms-and-condition">Terms & conditions </a> and <a href="/privacy-policy">Privacy Policy</a> and I am giving my consent to receive updates through sms/email.</p>
                       <div className="mb-3">
                         <Button className="btn btn-primary w-100" type="submit">
                           Submit
