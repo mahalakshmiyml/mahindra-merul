@@ -2,22 +2,23 @@ import axios from "axios";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import React, { useState } from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import * as Yup from "yup";
 
 const GetInTouch = () => {
   const onSubmit = (values) => {
     const data = {
-      "apikey":"902cb429-2dcc-4176-9958-a8610a354817",
-      "firstname":values.name,
-      "lastname":"",
-      "source":"Mahindra Eden",
-      "mobile":values.phone,
-      "CreatedDate":"20/01/2022",
-      "email":values.email,
-      "Remark":"Brochure Downloaded",
-      "HasVisitScheduled":"false",
-      "VisitDate":"null"
-      }
+      apikey: "902cb429-2dcc-4176-9958-a8610a354817",
+      firstname: values.name,
+      lastname: "",
+      source: "Mahindra Eden",
+      mobile: values.phone,
+      CreatedDate: "20/01/2022",
+      email: values.email,
+      Remark: "Brochure Downloaded",
+      HasVisitScheduled: "false",
+      VisitDate: "null",
+    };
 
     axios
       .get(
@@ -31,7 +32,7 @@ const GetInTouch = () => {
       .then(function (response) {
         console.log(response);
         setformStatus(response.data);
-        axios.post('https://buildeskapi.azurewebsites.net/api/Webhook', data)
+        axios.post("https://buildeskapi.azurewebsites.net/api/Webhook", data);
       })
       .catch(function (error) {
         console.log(error);
@@ -109,7 +110,7 @@ const GetInTouch = () => {
                   </Row>
                   <Row className="justify-content-center">
                     <Col md={10}>
-                      <div className="mb-5">
+                      <div className="mb-1">
                         <Field
                           type="tel"
                           className="form-control py-2"
@@ -134,7 +135,20 @@ const GetInTouch = () => {
                   </Row>
                   <Row className="justify-content-center">
                     <Col md={10}>
-                      <p>By Clicking submit, I agree to the <a href="/terms-and-condition">Terms & conditions </a> and <a href="/privacy-policy">Privacy Policy</a> and I am giving my consent to receive updates through sms/email.</p>
+                      <div className="py-2">
+                        <small>
+                          * By Clicking submit, I agree to the{" "}
+                          <Link to="/terms-and-condition" className="text-white">
+                            Terms & conditions{" "}
+                          </Link>{" "}
+                          and{" "}
+                          <Link to="/privacy-policy" className="text-white">
+                            Privacy Policy
+                          </Link>{" "}
+                          and I am giving my consent to receive updates through
+                          sms/email.
+                        </small>
+                      </div>
                       <div className="mb-3">
                         <Button className="btn btn-primary w-100" type="submit">
                           Submit
@@ -145,13 +159,21 @@ const GetInTouch = () => {
                 </Form>
               </Formik>
             </Col>
-            <Col md={6} className="align-self-center" >
+            <Col md={6} className="align-self-center">
               <div className="my-3 my-md-5">
                 <div className="text-center">
-                  <h2 className="text-white"><i className="fa fa-phone-volume mx-3"></i>/ <i className="fab fa-whatsapp"></i></h2>
+                  <h2 className="text-white">
+                    <i className="fa fa-phone-volume mx-3"></i>/{" "}
+                    <i className="fab fa-whatsapp"></i>
+                  </h2>
                 </div>
                 <div className="text-center">
-                  <a href="tel:08147203771" className="text-decoration-none fs-3 fw-bold text-white">+91 81472 03771</a>
+                  <a
+                    href="tel:08147203771"
+                    className="text-decoration-none fs-3 fw-bold text-white"
+                  >
+                    +91 81472 03771
+                  </a>
                 </div>
               </div>
             </Col>

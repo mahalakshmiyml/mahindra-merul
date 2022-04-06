@@ -4,6 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import Logo from "../../images/logo-1.png";
+import { Link } from "react-router-dom";
 
 const ContactModal = (props) => {
   const [formStatus, setformStatus] = useState("");
@@ -116,9 +117,9 @@ const ContactModal = (props) => {
                   </div>
                 </Col>
               </Row>
-              <Row className="mb-3">
+              <Row>
                 <Col md={12}>
-                  <div className="mb-3">
+                  <div className="mb-1">
                     <Field
                       type="tel"
                       className="form-control"
@@ -143,6 +144,15 @@ const ContactModal = (props) => {
               </Row>
               <Row className="">
                 <Col md={12}>
+                <div className="py-2">
+                        <small>
+                          * By Clicking submit, I agree to the{" "}
+                          <Link to="/terms-and-condition" className="text-dark">Terms & conditions </Link>{" "}
+                          and <Link to="/privacy-policy" className="text-dark">Privacy Policy</Link> and I
+                          am giving my consent to receive updates through
+                          sms/email.
+                        </small>
+                      </div>
                   <div className="">
                     <Button
                       className="btn btn-success text-white text-uppercase form-control"
