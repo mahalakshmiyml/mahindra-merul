@@ -1,7 +1,7 @@
 import React from "react";
-import { Col, Container, Image, Ratio, Row } from "react-bootstrap";
+import { Col, Container, Image, Row } from "react-bootstrap";
 import Image1 from "../images/floor-plans/location.png";
-import VirtualTour from "./VirtualTour";
+// import VirtualTour from "./VirtualTour";
 
 const Location = () => {
   return (

@@ -1,39 +1,26 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.scss';
-import TopHeader from './Components/Includes/TopHeader';
-import MainSlider from "./Components/Includes/MainSlider";
-import About from "./Components/About";
-import Amenities from "./Components/Amenities";
-import Overview from "./Components/Overview";
-import Gallery from './Components/Gallery';
-import SideForm from './Components/SideForm';
-import Footer from './Components/Includes/Footer';
-import Location from './Components/Location';
-import Pricing from './Components/Pricing';
-import MasterPlan from './Components/MaterPlan/MasterPlan';
-import VirtualTour from './Components/VirtualTour';
-import Contact from './Contact';
 import FixedIcons from './Components/FixedIcons';
-import ProjectHighlights from './Components/ProjectHighlights';
-import GetInTouch from './Components/GetInTouch';
+import Home from './Components/Home';
+import Footer from './Components/Includes/Footer';
+import PrivacyPolicy from './Components/Includes/PrivacyPolicy';
+import TermsAndCondition from './Components/Includes/TermsAndCondition';
+import TopHeader from './Components/Includes/TopHeader';
 
 function App() {
   return (
-    <>
-      <TopHeader />
-      <MainSlider />
-      <Overview />
-      <ProjectHighlights />      
-      <Pricing />
-      <MasterPlan />
-      <Gallery />
-      <Amenities />
-      {/* <VirtualTour /> */}
-      {/* <SideForm /> */}
-      <Location /> 
-      <GetInTouch />
-      <Footer />
-      <FixedIcons />
-    </>
+    <div>
+      <Router>        
+        <TopHeader />
+        <Routes>
+          <Route path="/" index element={<Home />}></Route>
+          <Route path="/terms-and-condition" element={<TermsAndCondition />}></Route>
+          <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
+        </Routes>
+        <Footer />
+        <FixedIcons />
+      </Router>
+    </div>
   );
 }
 

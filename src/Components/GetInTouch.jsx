@@ -1,7 +1,7 @@
 import axios from "axios";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import React, { useState } from "react";
-import { Col, Container, Image, Row, Button } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import * as Yup from "yup";
 
 const GetInTouch = () => {
@@ -134,6 +134,7 @@ const GetInTouch = () => {
                   </Row>
                   <Row className="justify-content-center">
                     <Col md={10}>
+                      <p>By Clicking submit, I agree to the <a href="/terms-and-condition">Terms & conditions </a> and <a href="/privacy-policy">Privacy Policy</a> and I am giving my consent to receive updates through sms/email.</p>
                       <div className="mb-3">
                         <Button className="btn btn-primary w-100" type="submit">
                           Submit
