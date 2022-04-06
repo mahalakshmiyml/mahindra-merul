@@ -6,22 +6,34 @@ import * as Yup from "yup";
 
 const Overview = () => {
   const onSubmit = (values) => {
-    const data = values;
+    const data = {
+      "apikey":"902cb429-2dcc-4176-9958-a8610a354817",
+      "firstname":values.name,
+      "lastname":"",
+      "source":"Mahindra Eden",
+      "mobile":values.phone,
+      "CreatedDate":"20/01/2022",
+      "email":values.email,
+      "Remark":"Brochure Downloaded",
+      "HasVisitScheduled":"false",
+      "VisitDate":"null"
+      }
 
-    console.log(data);
+    
 
     axios
       .get(
-        "email.php?sendto=" +
-          data.email +
+        "https://mahindra-eden.prelaunchprop.in/Email/email.php?sendto=" +
+          values.email +
           "&name=" +
-          data.name +
+          values.name +
           "&phone=" +
-          data.phone
+          values.phone
       )
       .then(function (response) {
         console.log(response);
         setformStatus(response.data);
+        axios.post('https://buildeskapi.azurewebsites.net/api/Webhook', data)
       })
       .catch(function (error) {
         console.log(error);
@@ -60,10 +72,6 @@ const Overview = () => {
               About Mahindra - Eden
             </h2>
             <div className="p-3 rounded">
-              <h3>CRAFTING NATURE POSITIVE HOMES</h3>
-              <p>Nature goes beyond the greens.</p>
-              <p>Welcome to the world of luxury living!</p>
-              <p>A wonderful enclave of exclusive homes. The perfect address for those who wish to beat the daily commute to work and yet be insulated from the bustle of urban life.</p>
               <p>Mahindra Eden Apartments are complimented for a pious and perfect living that targets you to create a balance of space, comfort, and grandeur. The exquisite homes are an example of opulence and an establishment of a multitude of facilities. The large open spaces within the gated community where kids and seniors of the family a carefree and relish life to the fullest. Every member will indulge in something or the other fun activity and rejoice in prosperity.</p>
               <p>Mahindra Eden Kanakapura where excitement reaches the next level considered by solace and soothing. Designed with great planning and the finest building where you can lose in pure harmony and peace. Dive in the swimming pool for a refreshing feel, an exotic clubhouse for relaxing senses, and the extensive lawns for the children to frolic and rejuvenate for all residents.</p>
               <p>Enjoy the luxury of a fully equipped clubhouse with the gamut of recreational amenities including a swimming pool, gym, health club, indoor badminton court, party halls, billiards, table tennis, board games, reading room, and provision for a crèche.</p>

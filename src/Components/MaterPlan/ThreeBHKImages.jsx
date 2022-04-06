@@ -17,9 +17,9 @@ const ThreeBHKImages = () => {
       <Container>
         <SimpleReactLightbox>
           <SRLWrapper>
-            <Row className="g-3">
+            <Row className="g-3 justify-content-center">
               {ThreeBHKImages.map((item) => (
-                <Col md={6} key={item.id}>
+                <Col md={6} xs={6} key={item.id}>
                   <div className="m-1 text-center border rounded">
                     <a href={item.imgName}>
                       <Image

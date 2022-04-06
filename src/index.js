@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 
-axios.defaults.baseURL="https://mahindra-eden.prelaunchprop.in/Email/"
+// axios.defaults.baseURL=""
 
 ReactDOM.render(
   <React.StrictMode>

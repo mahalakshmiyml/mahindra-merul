@@ -36,29 +36,29 @@ const Pricing = () => {
                     </Nav>
                   </Col>
                   <Col sm={12}>
-                    <Tab.Content className="py-5">
+                    <Tab.Content className="py-3">
                       <Tab.Pane eventKey="first">
                         <Row>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Type</p>
                               <h2 className="py-1">1 BHK</h2>
                             </div>
                           </Col>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Built-Up Area</p>
                               <h2 className="py-1">600Sqft</h2>
                             </div>
                           </Col>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Price</p>
                               <h2 className="py-1">45L Onwords*</h2>
                             </div>
                           </Col>
                           <Col md={3}>
-                            <div className="px-3 text-center border-none">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Cost Sheet</p>
                               <h2 className="py-1">
                                 <Button
@@ -76,19 +76,19 @@ const Pricing = () => {
                       <Tab.Pane eventKey="second">
                       <Row>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Type</p>
                               <h2 className="py-1">2 BHK</h2>
                             </div>
                           </Col>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Built-Up Area</p>
                               <h2 className="py-1">1200Sqft</h2>
                             </div>
                           </Col>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Price</p>
                               <h2 className="py-1">90L Onwords*</h2>
                             </div>
@@ -112,19 +112,19 @@ const Pricing = () => {
                       <Tab.Pane eventKey="third">
                       <Row>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Type</p>
                               <h2 className="py-1">3 BHK</h2>
                             </div>
                           </Col>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Built-Up Area</p>
                               <h2 className="py-1">1600 - 1800 Sqft</h2>
                             </div>
                           </Col>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Price</p>
                               <h2 className="py-1">1.3Cr Onwords*</h2>
                             </div>
@@ -148,19 +148,19 @@ const Pricing = () => {
                       <Tab.Pane eventKey="fourth">
                       <Row>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Type</p>
                               <h2 className="py-1">3 BHK + Study</h2>
                             </div>
                           </Col>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Built-Up Area</p>
                               <h2 className="py-1">2000 Sqft</h2>
                             </div>
                           </Col>
                           <Col md={3}>
-                            <div className="px-3 text-center border-end">
+                            <div className="px-3 text-center border my-2 rounded">
                               <p className="text-center fs-4">Price</p>
                               <h2 className="py-1">1.65Cr Onwords*</h2>
                             </div>

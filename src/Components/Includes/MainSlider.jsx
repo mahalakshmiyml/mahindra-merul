@@ -46,47 +46,35 @@ const MainSlider = () => {
         ))}
       </Carousel>
 
-      <div id="custom-content" className="d-block d-md-none">
+      <div id="custom-content" className="d-block d-md-none" style={{backgroundColor: "#060606d5"}}>
         <div className="container">
           <div className="row">
             <div className="col-md-12 ps-0 pe-0">
-              <h2 className="text-center text-white bg-danger p-2 text-uppercase">
+              <h2 className="text-center text-white p-2 text-uppercase">
                 <Button
                   onClick={handleShow}
-                  className="my-2 bg-transparent border-0 fs-2 fw-bold text-uppercase"
+                  className="my-2 bg-secondary border-0 fs-4 w-100 fw-bold text-uppercase"
                 >
                   Booking Open
                 </Button>
               </h2>
-              <h1 className="text-center text-danger text-uppercase">
+              <h1 className="text-center text-white text-uppercase">
                 Mahindra Eden
               </h1>
               <h3 className="text-danger">
                 {/* Pre-Launching Purva Sparkling Springs Phase-2 */}
               </h3>
-              <div className="pb-2 text-center">
-                Kanakapura Road, Bangalore.
-              </div>
-              <div className="bg-dark p-3 text-white">
-                <ul className="list-unstyled text-center">
-                  <li>
-                    <strong>Property Type:</strong> Residential Apartments
-                  </li>
-                  <li>
-                    <strong>Unit Type </strong> 2, 3 & 4 BHK
-                  </li>
-                  <li>
-                    <strong>Project Status: </strong> Under Construction
-                  </li>
-                  {/* <li>
-                      Luxury 3 & 4 BHK Villas. Starts with{" "}
-                      <strong>₹ 3 Crore*</strong> Onwards
-                    </li> */}
+              <div className="p-3 text-white">
+                <ul className="">
+                  <li className="py-1">Kanakapura Road, Bangalore.</li>
+                  <li className="py-1">Residential Apartments</li>
+                  <li className="py-1">1,2,3 & 3.5 BHK</li>
+                  <li className="py-1">Under Construction</li>
                 </ul>
                 <div className="text-center">
                   <Button
                     onClick={handleShow}
-                    className="my-2 bg-danger border-0 text-uppercase"
+                    className="my-2 bg-danger w-100 border-0 fw-bold text-uppercase"
                   >
                     Download Brochure
                   </Button>
@@ -115,7 +103,7 @@ const MainSlider = () => {
                   <ul className="">
                     <li className="py-1">Kanakapura Road, Bangalore.</li>
                     <li className="py-1">Residential Apartments</li>
-                    <li className="py-1">2, 3 & 4 BHK</li>
+                    <li className="py-1">1,2,3 & 3.5 BHK</li>
                     <li className="py-1">Under Construction</li>
                   </ul>
                   <div className="text-center">

@@ -8,7 +8,6 @@ import Image5 from "../../images/floor-plans/3bhk-green.png";
 import Image6 from "../../images/floor-plans/3bhk-medows.png";
 import Image7 from "../../images/floor-plans/floor-plan-wigs-a.png";
 import Image8 from "../../images/floor-plans/floor-plan-wigs-b.png";
-import Image9 from "../../images/floor-plans/location.png"
 
 const AllImages = () => {
   const images = [
@@ -20,7 +19,6 @@ const AllImages = () => {
     { id: 6, imgName: Image6, alt: "", tag: "" },
     { id: 7, imgName: Image7, alt: "", tag: "" },
     { id: 8, imgName: Image8, alt: "", tag: "" },
-    { id: 9, imgName: Image9, alt: "", tag: "" },
   ];
 
   return (
@@ -30,7 +28,7 @@ const AllImages = () => {
           <SRLWrapper>
             <Row className="g-3 justify-content-center">
               {images.map((item) => (
-                <Col md={6} key={item.id}>
+                <Col md={4} xs={6} key={item.id}>
                   <div className="m-1 text-center border rounded">
                     <a href={item.imgName}>
                       <Image

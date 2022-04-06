@@ -6,7 +6,7 @@ const Location = () => {
   return (
     <div className="py-3 py-md-5" id="location">
       <Container>
-        <Row>
+        <Row className="justify-content-center">
           <h2 className="py-3 text-primary text-center">Location</h2>
           <Col md={6} className="align-self-center">
             <Image src={Image1} alt="" className="img-fluid" />

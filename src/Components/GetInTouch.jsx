@@ -1,34 +1,42 @@
-import axios from 'axios';
-import { ErrorMessage, Field, Form, Formik } from 'formik'
-import React, { useState } from 'react'
-import { Col, Container, Image, Row, Button } from 'react-bootstrap'
+import axios from "axios";
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import React, { useState } from "react";
+import { Col, Container, Image, Row, Button } from "react-bootstrap";
 import * as Yup from "yup";
 
 const GetInTouch = () => {
-
   const onSubmit = (values) => {
-    const data = values;
-
-    console.log(data);
+    const data = {
+      "apikey":"902cb429-2dcc-4176-9958-a8610a354817",
+      "firstname":values.name,
+      "lastname":"",
+      "source":"Mahindra Eden",
+      "mobile":values.phone,
+      "CreatedDate":"20/01/2022",
+      "email":values.email,
+      "Remark":"Brochure Downloaded",
+      "HasVisitScheduled":"false",
+      "VisitDate":"null"
+      }
 
     axios
       .get(
-        "email.php?sendto=" +
-          data.email +
+        "https://mahindra-eden.prelaunchprop.in/Email/email.php?sendto=" +
+          values.email +
           "&name=" +
-          data.name +
+          values.name +
           "&phone=" +
-          data.phone
+          values.phone
       )
       .then(function (response) {
         console.log(response);
         setformStatus(response.data);
+        axios.post('https://buildeskapi.azurewebsites.net/api/Webhook', data)
       })
       .catch(function (error) {
         console.log(error);
         setformStatus(error.data);
       });
-
   };
   const [formStatus, setformStatus] = useState("");
 
@@ -39,7 +47,7 @@ const GetInTouch = () => {
   };
 
   const phoneRegExp =
-  /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
   const validationSchema = Yup.object({
     name: Yup.string().required("Required"),
@@ -53,19 +61,21 @@ const GetInTouch = () => {
 
   return (
     <div className="py-3 py-md-5" id="get-in-touch">
-        <h2 className="text-center text-white">Get in Touch</h2>
-        <Container>
+      <h2 className="text-center text-white">Get in Touch</h2>
+      <Container>
         <div className="p-3 text-white rounded">
-             <Row className="justify-content-center">
-               <Col md={6} className="align-self-center">
-                 
+          <Row className="justify-content-center">
+            <Col md={6} className="align-self-center">
               <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
                 onSubmit={onSubmit}
               >
-                <Form>
-                  <Row>
+                <Form
+                  style={{ backgroundColor: "#060606b5" }}
+                  className="text-center p-3 p-md-5"
+                >
+                  <Row className="justify-content-center">
                     <Col md={10}>
                       <div className="mb-5">
                         <Field
@@ -81,7 +91,7 @@ const GetInTouch = () => {
                       </div>
                     </Col>
                   </Row>
-                  <Row>
+                  <Row className="justify-content-center">
                     <Col md={10}>
                       <div className="mb-5">
                         <Field
@@ -97,7 +107,7 @@ const GetInTouch = () => {
                       </div>
                     </Col>
                   </Row>
-                  <Row>
+                  <Row className="justify-content-center">
                     <Col md={10}>
                       <div className="mb-5">
                         <Field
@@ -113,7 +123,7 @@ const GetInTouch = () => {
                       </div>
                     </Col>
                   </Row>
-                  <Row>
+                  <Row className="justify-content-center">
                     <Col md={10}>
                       {formStatus ? (
                         <div className="alert alert-success p-3 text-center">
@@ -122,7 +132,7 @@ const GetInTouch = () => {
                       ) : null}
                     </Col>
                   </Row>
-                  <Row>
+                  <Row className="justify-content-center">
                     <Col md={10}>
                       <div className="mb-3">
                         <Button className="btn btn-primary w-100" type="submit">
@@ -133,29 +143,22 @@ const GetInTouch = () => {
                   </Row>
                 </Form>
               </Formik>
-               </Col>
-               <Col md={6} className="align-self-center">
-                 <div className="text-center p-4">
-                   <a
-                href="tel:081472037710"
-                className="bg-primary p-3 rounded-circle m-2"
-              >
-                <i
-                  className="fa fa-volume-control-phone text-white fs-5"
-                  aria-hidden="true"
-                ></i>
-                <span className="d-block d-md-none"></span>
-                </a>     
-                 </div>
-                 
-                 <h3> WhatsApp</h3>
-               </Col>
-             </Row>
-            </div>
-        </Container>
-
+            </Col>
+            <Col md={6} className="align-self-center" >
+              <div className="my-3 my-md-5">
+                <div className="text-center">
+                  <h2 className="text-white"><i className="fa fa-phone-volume mx-3"></i>/ <i className="fab fa-whatsapp"></i></h2>
+                </div>
+                <div className="text-center">
+                  <a href="tel:08147203771" className="text-decoration-none fs-3 fw-bold text-white">+91 81472 03771</a>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </Container>
     </div>
-  )
-}
+  );
+};
 
-export default GetInTouch
+export default GetInTouch;

@@ -34,7 +34,7 @@ const ContactModal = (props) => {
 
     axios
       .get(
-        "email.php?sendto=" +
+        "https://mahindra-eden.prelaunchprop.in/Email/email.php?sendto=" +
           data.email +
           "&name=" +
           data.name +
@@ -44,26 +44,26 @@ const ContactModal = (props) => {
       .then(function (response) {
         // console.log(response);
         setformStatus(response.data);
+        axios.post(
+          "https://buildeskapi.azurewebsites.net/api/Webhook",
+          (data = {
+            apikey: "902cb429-2dcc-4176-9958-a8610a354817",
+            firstname: data.name,
+            lastname: "",
+            source: "Mahindra Eden",
+            mobile: data.phone,
+            CreatedDate: "14/02/2022",
+            email: data.email,
+            Remark: "Brochure Downloaded",
+            HasVisitScheduled: "false",
+            VisitDate: "null",
+          })
+        );
       })
       .catch(function (error) {
         // console.log(error);
         setformStatus(error.data);
       });
-
-    axios.post(
-      "https://buildeskapi.azurewebsites.net/api/Webhook", data = {
-        apikey: "902cb429-2dcc-4176-9958-a8610a354817",
-        firstname: data.name,
-        lastname: "",
-        source: "Mahindra Eden",
-        mobile: data.phone,
-        CreatedDate: "14/02/2022",
-        email: data.email,
-        Remark: "Brochure Downloaded",
-        HasVisitScheduled: "false",
-        VisitDate: "null",
-      })
-      
   };
   return (
     <div>

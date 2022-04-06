@@ -22,7 +22,7 @@ const MasterPlan = () => {
               id="controlled-tab-example"
               activeKey={key}
               onSelect={(k) => setKey(k)}
-              className="mb-3 text-dark"
+              className="mb-3 text-dark justify-content-center"
             >
               <Tab eventKey="all" title="All" className="text-dark">
                 <AllImages />

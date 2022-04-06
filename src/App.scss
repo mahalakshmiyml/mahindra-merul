@@ -121,7 +121,7 @@ p {
 #pricing {
   .nav-link {
     cursor: pointer;
-    margin: 10px 10px;
+    margin: 5px 5px;
     color: $primary-color !important;
     &.active {
       background-color: $primary-color !important;
@@ -170,7 +170,7 @@ p {
 }
 
 #get-in-touch{
-  background-image: url("./images/gallery/image-1.png");  
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/gallery/image-1.png") ;  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

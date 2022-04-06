@@ -11,7 +11,7 @@ const Amenities = () => {
           <Col md={12} className="pt-3 pb-3 pt-md-2 pb-md-2">
             {/* <h4 className="text-primary">Indoor Amenities</h4> */}
             <Row className="justify-content-center">
-              <Col md={2} className="py-3 py-md-3">
+              <Col md={2} xs={6} className="py-3 py-md-3">
                 <div className="text-center bg-primary rounded p-4">
                   <i className="fa-solid fa-building-columns fs-1 text-white"></i>
                   <h6 className="text-center text-white py-2">
@@ -19,42 +19,33 @@ const Amenities = () => {
                   </h6>
                 </div>
               </Col>
-              <Col md={2} className="py-3 py-md-3">
+              <Col md={2} xs={6} className="py-3 py-md-3">
                 <div className="text-center bg-primary rounded p-4">
-                <i className="fa-solid fa-table-tennis-paddle-ball fs-1 text-white"></i>
-                  <h6 className="text-center text-white py-2">
-                    Squash Court
-                  </h6>
+                  <i className="fa-solid fa-table-tennis-paddle-ball fs-1 text-white"></i>
+                  <h6 className="text-center text-white py-2">Squash Court</h6>
                 </div>
               </Col>
-              <Col md={2} className="py-3 py-md-3">
+              <Col md={2} xs={6} className="py-3 py-md-3">
                 <div className="text-center bg-primary rounded p-4">
-                <i className="fa-solid fa-spa fs-1 text-white"></i>
-                  <h6 className="text-center text-white py-2">
-                    Spa
-                  </h6>
+                  <i className="fa-solid fa-spa fs-1 text-white"></i>
+                  <h6 className="text-center text-white py-2">Spa</h6>
                 </div>
               </Col>
-              <Col md={2} className="py-3 py-md-3">
+              <Col md={2} xs={6} className="py-3 py-md-3">
                 <div className="text-center bg-primary rounded p-4">
-                <i className="fa-solid fa-photo-film fs-1 text-white"></i>
-                  <h6 className="text-center text-white py-2">
-                  Mini theatre
-                  </h6>
+                  <i className="fa-solid fa-photo-film fs-1 text-white"></i>
+                  <h6 className="text-center text-white py-2">Mini theatre</h6>
                 </div>
               </Col>
-              
-              <Col md={2} className="py-3 py-md-3">
+              <Col md={2} xs={6} className="py-3 py-md-3">
                 <div className="text-center bg-primary rounded p-4">
-                <i className="fa-solid fa-building-user fs-1 text-white"></i>
-                  <h6 className="text-center text-white py-2">
-                    Guest Room
-                  </h6>
+                  <i className="fa-solid fa-building-user fs-1 text-white"></i>
+                  <h6 className="text-center text-white py-2">Guest Room</h6>
                 </div>
               </Col>
             </Row>
             <Row className="justify-content-center">
-              <Col md={2} className="py-3 py-md-3">
+              <Col md={2} xs={6} className="py-3 py-md-3">
                 <div className="text-center bg-primary rounded p-4">
                   <i className="fa-solid fa-dumbbell fs-1 text-white"></i>
                   <h6 className="text-center text-white py-2">
@@ -62,38 +53,39 @@ const Amenities = () => {
                   </h6>
                 </div>
               </Col>
-              <Col md={2} className="py-3 py-md-3">
+              <Col md={2} xs={6} className="py-3 py-md-3">
                 <div className="text-center bg-primary rounded p-4">
-                <i className="fa-solid fa-book-open fs-1 text-white"></i> 
+                  <i className="fa-solid fa-book-open fs-1 text-white"></i>
                   <h6 className="text-center text-white py-2">
-                  Library & business lounge
+                    Library & business lounge
                   </h6>
                 </div>
               </Col>
-              <Col md={2} className="py-3 py-md-3">
+              <Col md={2} xs={6} className="py-3 py-md-3">
                 <div className="text-center bg-primary rounded p-4">
-                <i className="fa-solid fa-chess-board fs-1 text-white"></i>
+                  <i className="fa-solid fa-chess-board fs-1 text-white"></i>
                   <h6 className="text-center text-white py-2">
-                  <i class=""></i>
+                    <i className=""></i>
                     Indoor Games Room
                   </h6>
                 </div>
               </Col>
-              <Col md={2} className="py-3 py-md-3">
+              <Col md={2} xs={6} className="py-3 py-md-3">
                 <div className="text-center bg-primary rounded p-4">
-                <i className="fa-solid fa-store fs-1 text-white"></i>
+                  <i className="fa-solid fa-store fs-1 text-white"></i>
                   <h6 className="text-center text-white py-2">
-                  Provision For Convenience store
+                    Provision For Convenience store
                   </h6>
                 </div>
               </Col>
-              
-              <Col md={2} className="py-3 py-md-3">
-                <div className="text-center bg-primary rounded p-4">
-                <i className="fa-solid fa-shuttlecock fs-1 text-white"></i>
+              <Col md={2} xs={6} className="py-3 py-md-3">
+                <div
+                  className="text-center bg-primary rounded p-4"
+                  style={{ height: "150px" }}
+                >
+                  <i className="fas fa-baseball-ball fs-1 text-white"></i>
                   <h6 className="text-center text-white py-2">
-                  <i class="fa-regular "></i>
-                  Badminton court
+                    Badminton court
                   </h6>
                 </div>
               </Col>
