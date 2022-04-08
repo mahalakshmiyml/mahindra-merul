@@ -175,6 +175,19 @@ const GetInTouch = () => {
                     +91 81472 03771
                   </a>
                 </div>
+                <div className="text-center">
+                  <h2 className="text-white">
+                    <i className="fa-solid fa-envelope"></i>
+                  </h2>
+                </div>
+                <div className="text-center">
+                  <a
+                    href="mailto:"
+                    className="text-decoration-none fs-3 fw-bold text-white"
+                  >
+                    
+                  </a>
+                </div>
               </div>
             </Col>
           </Row>

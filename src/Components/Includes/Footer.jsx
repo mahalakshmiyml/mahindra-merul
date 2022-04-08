@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,6 +17,12 @@ const Footer = () => {
               may also send updates to the mobile number/email id registered
               with us. All Rights Reserved.
             </p>
+          </Col>
+          <Col md={2}>
+            <ul className="list-unstyled py-2">
+              <li><Link to={'/privacy-policy'} className="me-2 text-white text-decoration-none">Privacy Policy</Link></li>
+              <li><Link to={'/terms-and-condition'} className="me-2 text-white text-decoration-none">Terms and Conditions</Link></li>
+            </ul>
           </Col>
         </Row>
       </Container>
