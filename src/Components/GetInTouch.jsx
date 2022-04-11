@@ -182,10 +182,9 @@ const GetInTouch = () => {
                 </div>
                 <div className="text-center">
                   <a
-                    href="mailto:"
+                    href="mailto:mehul@apnaswarg.com"
                     className="text-decoration-none fs-3 fw-bold text-white"
-                  >
-                    
+                  >        mehul@apnaswarg.com         
                   </a>
                 </div>
               </div>
