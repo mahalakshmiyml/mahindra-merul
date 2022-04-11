@@ -137,7 +137,7 @@ const GetInTouch = () => {
                     <Col md={10}>
                       <div className="py-2">
                         <small>
-                          * By Clicking submit, I agree to the{" "}
+                          By Clicking submit, I agree to the{" "}
                           <Link to="/terms-and-condition" className="text-white">
                             Terms & conditions{" "}
                           </Link>{" "}

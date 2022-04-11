@@ -168,7 +168,7 @@ const Overview = () => {
                     <Col md={12}>
                       <div className="py-2">
                         <small>
-                          * By Clicking submit, I agree to the{" "}
+                           By Clicking submit, I agree to the{" "}
                           <Link to="/terms-and-condition" className="text-white">Terms & conditions </Link>{" "}
                           and <Link to="/privacy-policy" className="text-white">Privacy Policy</Link> and I
                           am giving my consent to receive updates through

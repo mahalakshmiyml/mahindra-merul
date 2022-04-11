@@ -151,7 +151,7 @@ const SideForm = () => {
                 <Col md={12}>
 
                   <div className="">
-                  <p className="text-white">* By Clicking submit, I agree to the <a href="/terms-and-condition">Terms & conditions </a> and <a href="/privacy-policy">Privacy Policy</a> and I am giving my consent to receive updates through sms/email.</p>
+                  <p className="text-white"> By Clicking submit, I agree to the <a href="/terms-and-condition">Terms & conditions </a> and <a href="/privacy-policy">Privacy Policy</a> and I am giving my consent to receive updates through sms/email.</p>
                     <Button className="btn btn-primary" type="submit">
                       Submit
                     </Button>
