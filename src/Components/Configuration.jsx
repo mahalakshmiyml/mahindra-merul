@@ -27,7 +27,7 @@ const Configuration = () => {
                   <TabContainer>
                       <TabContent>
                         <TabPane>
-                            <h6>Typw</h6>
+                            <h6>Type</h6>
                         </TabPane>
                       </TabContent>
                   </TabContainer>
